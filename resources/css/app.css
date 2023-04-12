@@ -1,0 +1,53 @@
+/*@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';*/
+
+/* Firstly I design all HTML structure, then write the related css for it.*/
+
+.rtl {
+	direction: rtl;
+	
+}
+
+.header-top {
+	vertical-align: top;
+}
+
+.header-top .right-contents, .header-top .left-contents {
+    -webkit-box-sizing: border-box;  
+    -moz-box-sizing: border-box;  
+    box-sizing: border-box;  
+    display: inline-block;
+    vertical-align: top;
+}
+
+.header-top .right-contents {
+	min-width: auto;
+	border: 1px solid purple;
+}
+
+
+.header-top .left-contents {
+	min-width: auto;
+	position: absolute;
+	top: 1%;
+	left: 5%;
+	border: 1px solid purple;
+}
+
+.icon-menu {
+    background-image: URL('../images/icon-menu.svg');
+    width: 24px;
+    height: 24px;
+}
+
+.icon-menu-close {
+    background-image: URL('../images/icon-menu.close.svg');
+    width: 32px;
+    height: 32px;
+    margin-left: auto;
+}
+
+
+
+

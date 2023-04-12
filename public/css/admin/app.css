@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'BYekan';
+  src: url('/fonts/farsi/IranYekan/eot/IRANYekanWebRegular.eot'); /* IE9 Compat Modes */
+  src: /*url('/fonts/farsi/IranYekan/BYekan.eot?#iefix') format('embedded-opentype'), IE6-IE8 */
+         url('/fonts/farsi/IranYekan/woff2//IRANYekanWebRegular.woff2') format('woff2'),  /*Super Modern Browsers */
+         url('/fonts/farsi/IranYekan/woff//IRANYekanWebRegular.woff') format('woff'), /* Pretty Modern Browsers */
+         url('/fonts/farsi/IranYekan/ttf/IRANYekanWebRegular.ttf')  format('truetype'); /* Safari, Android, iOS */
+         
+}
+
+
+
+* {
+    font-family: "BYekan";
+}
+
+
+.rtl {
+    direction: rtl;
+    color: green;
+    
+    }

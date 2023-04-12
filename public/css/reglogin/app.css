@@ -1,0 +1,794 @@
+
+/*.card.login-card {
+    border: 2px dotted red;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,0.5);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+    border-radius: 10px;
+    
+}*/
+
+.card.login-card {
+    /*border: 2px dotted red;*/
+    width: 90%;
+    margin: 5em auto;
+    padding: 1em; 
+    background: rgba(0,0,0,0.10);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+    border-radius: 10px;  
+}
+
+.card.login-card .title {
+    margin: 0 auto;
+    width: fit-content;
+    color: rgba(0,0,0,0.50);
+}
+
+.card.login-card form .box.phone-box {
+    position: relative;
+    /*border: 2px dotted red; */ 
+
+}
+
+
+.card.login-card form .box.phone-box #phone-or-email-label {
+    position: absolute;
+    top: 0;
+    right: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+    padding: 0;
+    font-size: 1em;
+    /*border: 1px dotted blue;*/
+    margin: 0;
+    color: rgba(0,0,0,0.50);
+    
+}
+
+
+.card.login-card form .box.phone-box #phone-email-input {
+    /*border: 1px dotted red;*/
+    border: none;
+    border-bottom: 2px solid green;
+    width: 95%;
+    margin: 0 auto 1em auto;
+    padding: 0.5em;
+    display: block;
+    outline: none;
+    background: transparent;
+   
+}
+
+.card.login-card form .box.phone-box #phone-email-input:focus ~ label,
+.card.login-card form .box.phone-box #phone-email-input:valid ~ label
+ {
+    top: -1.5em;
+    right: 1em;
+    color: green;
+    font-size: 0.8em;
+     
+}
+
+.card.login-card form .box.goto-box {
+    position: relative;
+    padding: 0 1em;
+    margin: 0;
+    /*border: 1px solid red;*/
+   
+}
+
+.card.login-card form .box.goto-box button {
+    position: relative;
+    padding: 10px 20px;
+    margin: 1em 0 0 1em;
+    /*border: 1px solid red;*/
+    border: none;
+    transition: 0.5s;
+    width: fit-content;
+    overflow: hidden;   
+}
+
+.card.login-card form .box.goto-box button:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+ 
+}
+
+.card.login-card form .box.goto-box button span {
+    position: absolute;
+    display: block;
+}
+
+.card.login-card form .box.goto-box button span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+    0% {
+        left: -100%;
+        
+    }
+    50%, 100% {
+        left: 100%;
+    }
+}
+
+
+.card.login-card form .box.goto-box button span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+    0% {
+        top: -100%;
+    }
+    50%, 100% {
+        top: 100%;
+    }
+}
+
+
+.card.login-card form .box.goto-box button span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+    0% {
+        right: -100%;
+    }
+    50%, 100% {
+        right: 100%;
+    }
+}
+
+.card.login-card form .box.goto-box button span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes btn-anim4 {
+    0% {
+        bottom: -100%;
+    }
+    50%, 100% {
+        bottom: 100%;
+    }
+}
+
+
+
+.card.login-card form .box.goto-box a.pass-req {
+    display: block;
+    padding: 10px 20px;
+    margin-top: 1em;
+    /*border: 1px solid red;*/
+    font-size: 0.7em;
+    transition: 0.5s;
+   
+}
+
+body .alert-box {
+    width: 90%;
+    margin: 1em auto;
+    padding: 0.5em;
+    /*border: 1px solid red;*/
+    background-color: #e884c5;
+    border-radius: 5px;
+}
+
+body .alert-box .alert-title {
+    font-size: 0.8rem;
+
+    
+}
+
+body .alert-box .alert.alert-danger {
+    color: red;
+    list-style-type: none;
+    /*border: 1px dotted green;*/
+    margin: 0.5em 0 0 0;
+    padding: 0;
+    font-size: 0.8rem;
+
+    
+}
+
+.card.login-card form .label-box {
+
+}
+
+.card.login-card form .label-box div {
+  margin: 0 auto;
+  width: fit-content;
+  padding: 0;    
+}
+
+
+
+.card.login-card form .box.password-box {
+    position: relative;
+    /*border: 2px dotted red; */ 
+
+}
+
+
+.card.login-card form .box.password-box label {
+    position: absolute;
+    top: 0;
+    right: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+    padding: 0;
+    font-size: 1em;
+    /*border: 1px dotted blue;*/
+    margin: 0;
+    color: rgba(0,0,0,0.50); 
+}
+
+
+.card.login-card form .box.password-box input {
+    /*border: 1px dotted red;*/
+    border: none;
+    border-bottom: 2px solid green;
+    width: 95%;
+    margin: 0 auto 1em auto;
+    padding: 0.5em;
+    display: block;
+    outline: none;
+    background: transparent;  
+}
+
+.card.login-card form .box.password-box #password:focus ~ label,
+.card.login-card form .box.password-box #password:valid ~ label
+ {
+    top: -1.5em;
+    right: 1em;
+    color: green;
+    font-size: 0.8em;
+     
+}
+
+.card.login-card form .box.pass-forget-box {
+    /*border: 1px dotted red;*/
+    width: 95%;
+    margin: 0 auto 1em auto;
+    padding: 0.5em;
+    display: block;
+    outline: none;
+    background: transparent;
+    font-size: 0.8rem;  
+}
+
+.card.login-card form .box.pass-forget-box {
+   text-decoration: none;
+  
+}
+
+.card.login-card form button#submit {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto 1em auto;
+    padding:  0.5em 2em;
+    font-size: 1rem; 
+    border: none;
+    transition: 0.5s;
+    overflow: hidden;  
+}
+
+.card.login-card form button#submit:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4, 0 0 25px #03e9f4, 0 0 50px #03e9f4, 0 0 100px #03e9f4;
+ 
+}
+
+
+.card.login-card form button#submit span {
+    position: absolute;
+    display: block;
+}
+
+.card.login-card form button#submit span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+
+
+.card.login-card form button#submit span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: 0.25s;
+}
+
+
+.card.login-card form button#submit span:nth-child(3) {
+    bottom: 0;
+    right: -100%;
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(270deg, transparent, #03e9f4);
+    animation: btn-anim3 1s linear infinite;
+    animation-delay: 0.5s;
+}
+
+.card.login-card form button#submit span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 3px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #03e9f4);
+    animation: btn-anim4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+ 
+.register-card {
+    border: 2px dotted red;
+    width: 90%;
+    margin: 5em auto;
+    padding: 1em; 
+    background: rgba(0,0,0,0.10);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+    border-radius: 10px;  
+}
+
+.register-card .logo-box {
+    height: 3em;
+    width: 3em;
+    margin: 1em auto;
+    
+}
+ 
+.register-card .title {
+    margin: 0 auto;
+    width: fit-content;
+    color: rgba(0,0,0,0.50);
+}
+
+.register-card form .box.phone-email-box {
+    position: relative;
+    /*border: 2px dotted red; */ 
+
+}
+
+.register-card form .box.phone-email-box label {
+    position: absolute;
+    top: 0;
+    right: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+    padding: 0;
+    font-size: 1em;
+    /*border: 1px dotted blue;*/
+    margin: 0;
+    color: rgba(0,0,0,0.50);
+    
+
+}
+ 
+.register-card form .box.phone-email-box #phone-or-email {
+    /*border: 1px dotted red;*/
+    border: none;
+    border-bottom: 2px solid green;
+    width: 95%;
+    margin: 0 auto 1em auto;
+    padding: 0.5em;
+    display: block;
+    outline: none;
+    background: transparent;
+   
+}
+
+.register-card form .box.phone-email-box #phone-or-email:focus ~ label,
+.register-card form .box.phone-email-box #phone-or-email:valid ~ label
+ {
+    top: -1.5em;
+    right: 1em;
+    color: green;
+    font-size: 0.8em;
+     
+}
+
+
+
+
+.register-card form .box.password-box {
+    position: relative;
+    /*border: 2px dotted red; */ 
+
+}
+
+.register-card form .box.password-box label {
+    position: absolute;
+    top: 0;
+    right: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+    padding: 0;
+    font-size: 1em;
+    /*border: 1px dotted blue;*/
+    margin: 0;
+    color: rgba(0,0,0,0.50); 
+}
+
+
+.register-card form .box.password-box input {
+    /*border: 1px dotted red;*/
+    border: none;
+    border-bottom: 2px solid green;
+    width: 95%;
+    margin: 0 auto 1em auto;
+    padding: 0.5em;
+    display: block;
+    outline: none;
+    background: transparent;  
+}
+
+.register-card form .box.password-box input:focus ~ label,
+.register-card form .box.password-box input:valid ~ label
+ {
+    top: -1.5em;
+    right: 1em;
+    color: green;
+    font-size: 0.8em;
+     
+}
+
+.register-card form .already-registered {
+    /*border: 1px dotted red;*/
+    margin: 0 auto 1em auto;
+    padding: 0.5em;
+    background: transparent;  
+}
+
+.register-card form .already-registered a {
+    /*border: 1px dotted red;*/
+    text-decoration: none; 
+}
+
+.register-card form button.submit {
+    /*border: 1px dotted red;*/
+    width: fit-content;
+    display: block;
+    padding: 0.5em 2em;
+    border: 2px solid green;
+    background: transparent;
+    margin: 0 auto;
+
+}
+
+.register-card form button.submit:hover
+ {
+    background-color: green;
+    color: white; 
+}
+
+ 
+ 
+
+
+.forgot-pass-card {
+    border: 2px dotted red;
+    width: 90%;
+    margin: 5em auto;
+    padding: 1em; 
+    background: rgba(0,0,0,0.10);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+    border-radius: 10px;  
+}
+
+.forgot-pass-card .logo-box {
+    height: 3em;
+    width: 3em;
+    margin: 1em auto;
+    
+}
+ 
+.forgot-pass-card .title {
+    margin: 0 auto;
+    width: fit-content;
+    color: rgba(0,0,0,0.50);
+}
+
+.forgot-pass-card .forgot-pass-args {
+    margin: 0 auto;
+    width: fit-content;
+    color: rgba(0,0,0,0.50);
+}
+
+.forgot-pass-card form .box.phone-email-box {
+    position: relative;
+    /*border: 2px dotted red; */ 
+
+}
+
+.forgot-pass-card form .box.phone-email-box label {
+    position: absolute;
+    top: 0;
+    right: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+    padding: 0;
+    font-size: 1em;
+    /*border: 1px dotted blue;*/
+    margin: 0;
+    color: rgba(0,0,0,0.50);
+    
+
+}
+ 
+.forgot-pass-card form .box.phone-email-box #phone-or-email {
+    /*border: 1px dotted red;*/
+    border: none;
+    border-bottom: 2px solid green;
+    width: 95%;
+    margin: 0 auto 1em auto;
+    padding: 0.5em;
+    display: block;
+    outline: none;
+    background: transparent;
+   
+}
+
+.forgot-pass-card form .box.phone-email-box #phone-or-email:focus ~ label,
+.forgot-pass-card form .box.phone-email-box #phone-or-email:valid ~ label
+ {
+    top: -1.5em;
+    right: 1em;
+    color: green;
+    font-size: 0.8em;
+     
+}
+
+
+.forgot-pass-card form button.submit {
+    /*border: 1px dotted red;*/
+    width: fit-content;
+    display: block;
+    padding: 0.5em 2em;
+    border: 2px solid green;
+    background: transparent;
+    margin: 1em auto;
+
+}
+
+.forgot-pass-card form button.submit:hover
+ {
+    background-color: green;
+    color: white; 
+}
+
+
+.forgot-pass-card form .box.otp-box {
+    position: relative;
+    /*border: 2px dotted red; */ 
+
+}
+
+.forgot-pass-card form .box.otp-box label {
+    position: absolute;
+    top: 0;
+    right: 2em;
+    pointer-events: none;
+    transition: 0.5s;
+    padding: 0;
+    font-size: 1em;
+    margin: 0;
+    color: rgba(0,0,0,0.50);
+    
+
+}
+ 
+.forgot-pass-card form .box.otp-box #otp {
+    /*border: 1px dotted red;*/
+    border: none;
+    border-bottom: 2px solid green;
+    width: 95%;
+    margin: 0 auto 1em auto;
+    padding: 0.5em;
+    display: block;
+    outline: none;
+    background: transparent;
+   
+}
+
+.forgot-pass-card form .box.otp-box #otp:focus ~ label,
+.forgot-pass-card form .box.otp-box #otp:valid ~ label
+ {
+    top: -1.5em;
+    right: 1em;
+    color: green;
+    font-size: 0.8em;
+     
+}
+
+.forgot-pass-card, .register-card form .alert {
+    margin: 1em;
+}
+
+
+.forgot-pass-card, .register-card form .alert.error {
+    color: red;
+    font-size: 0.7rem;
+}
+
+
+.pass-change-card {
+    border: 2px dotted red;
+    width: 90%;
+    margin: 5em auto;
+    padding: 1em; 
+    background: rgba(0,0,0,0.10);
+    box-shadow: 0 15px 25px rgba(0,0,0,0.6);
+    border-radius: 10px;  
+}
+
+.pass-change-card .logo-box {
+    height: 3em;
+    width: 3em;
+    margin: 1em auto;
+    
+}
+ 
+.pass-change-card .title {
+    margin: 0 auto;
+    width: fit-content;
+    color: rgba(0,0,0,0.50);
+}
+
+.pass-change-card .pass-change-args {
+    margin: 0 auto;
+    width: fit-content;
+    color: rgba(0,0,0,0.50);
+    font-size: 0.7em;
+}
+
+.pass-change-card form .alert {
+    color: red;
+    font-size: 0.7em;
+    /*border: 2px dotted red; */ 
+
+}
+
+.pass-change-card form .box.password-box {
+    position: relative;
+    /*border: 2px dotted red; */ 
+
+}
+
+.pass-change-card form .box.password-box label {
+    position: absolute;
+    top: 0;
+    right: 1em;
+    pointer-events: none;
+    transition: 0.5s;
+    padding: 0;
+    font-size: 1em;
+    /*border: 1px dotted blue;*/
+    margin: 0;
+    color: rgba(0,0,0,0.50);
+    
+
+}
+ 
+.pass-change-card form .box.password-box #password, #password_confirmation {
+    /*border: 1px dotted red;*/
+    border: none;
+    border-bottom: 2px solid green;
+    width: 95%;
+    margin: 0 auto 1em auto;
+    padding: 0.5em;
+    display: block;
+    outline: none;
+    background: transparent;
+   
+}
+
+.pass-change-card form .box.password-box #password:focus ~ label,
+.pass-change-card form .box.password-box #password:valid ~ label
+ {
+    top: -1.5em;
+    right: 1em;
+    color: green;
+    font-size: 0.8em;
+     
+}
+
+.pass-change-card form .box.password-box #password_confirmation:focus ~ label,
+.pass-change-card form .box.password-box #password_confirmation:valid ~ label
+ {
+    top: -1.5em;
+    right: 1em;
+    color: green;
+    font-size: 0.8em;
+     
+}
+
+
+.pass-change-card form button.submit {
+   
+    display: block;
+
+}
+
+.pass-change-card form button {
+    /*border: 1px dotted red;*/
+    width: fit-content;
+    display: block;
+    padding: 0.5em 2em;
+    border: 2px solid green;
+    background: transparent;
+    margin: 1em auto;
+
+}
+
+.pass-change-card form button:hover
+ {
+    background-color: green;
+    color: white; 
+}
+
+.pass-change-card button {
+    /*border: 1px dotted red;*/
+    width: fit-content;
+    display: block;
+    padding: 0.5em 2em;
+    border: 2px solid green;
+    background: transparent;
+    margin: 1em auto;
+
+}
+
+.pass-change-card button:hover
+ {
+    background-color: green;
+    color: white; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
